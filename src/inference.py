@@ -3,6 +3,7 @@ import pandas as pd
 import numpy as np
 from PIL import Image
 import torch
+import os
 from torchvision.transforms import ToTensor,Resize,Normalize,Compose
 l=['air hockey',
  'ampute football',
@@ -105,7 +106,7 @@ l=['air hockey',
  'wheelchair racing',
  'wingsuit flying']
 with st.sidebar:
-    image = Image.open('sports_icon.png')
+    image = Image.open(os.getcwd()+'\\'+'src\\sports_icon.png')
     st.image(image)
 
     st.text("""
