@@ -124,7 +124,7 @@ def load_image(img):
     return image
 
 def predict(processed_image):
-    model = torch.load("models\sports_100_classification_resnet18_adam_10_epochs.pth",map_location=torch.device('cpu'))
+    model = torch.load(os.getcwd()+'/'+"models/sports_100_classification_resnet18_adam_10_epochs.pth",map_location=torch.device('cpu'))
     model.eval()
     with torch.no_grad():
         yhat=model(processed_image)
