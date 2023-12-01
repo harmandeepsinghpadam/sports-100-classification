@@ -1,7 +1,7 @@
 sports-100-classification
 ==============================
 
-Classifying 100 sports using 224x224 images using ResNet18 model
+Classifying 100 sports using 224x224 images using fine-tuned ResNet18 model
 
 Project Organization
 ------------
