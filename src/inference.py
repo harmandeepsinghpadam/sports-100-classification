@@ -106,7 +106,7 @@ l=['air hockey',
  'wheelchair racing',
  'wingsuit flying']
 with st.sidebar:
-    image = Image.open(os.getcwd()+'\\'+'src\\sports_icon.png')
+    image = Image.open(os.getcwd()+'/'+'src/sports_icon.png')
     st.image(image)
 
     st.text("""
